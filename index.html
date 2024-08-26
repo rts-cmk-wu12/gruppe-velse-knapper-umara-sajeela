@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>buttons</title>
+    <script src="buttons.js" defer></script>
+    <script src="readmore.js" defer></script>
+    <script src="søg.js" defer></script>
+    <script src="submit.js" defer></script>
+
+    <style>
+        body {
+          background-color: white;
+          color: black;
+          transition: background-color 0.5s;
+        }
+    
+        .dark-theme {
+          background-color: black;
+          color: white;
+        }
+    
+        .dark-theme:hover {
+          background-color: #333;
+        }
+    
+        .dark-theme:focus {
+          outline: none;
+        }
+      </style>
+</head>
+<body>
+    <button id="button_background_change">tryk her!</button>
+    <button id="button-alert">hej tryk her</button>
+    <h1>Dark Theme Button</h1>
+    <button id="themeButton">Switch to Dark Theme</button>
+
+    <div>
+        <form action="svar.html" class="contact__form" method="post">
+            <div class="contact__wrap">
+                <label class="contact__label" for="fullname">For- og Efternavn:</label>
+                <input class="contact__input" type="text" id="fullname">
+            </div>
+            <div class="contact__wrap">
+                <label class="contact__label" for="email">Emailadresse:</label>
+                <input class="contact__input" type="text" id="email">
+            </div>
+            <div class="contact__wrap">
+                <label for="textarea">Besked:</label>
+                <textarea class="contact__textarea" name="textarea" id="textarea"></textarea>
+            </div>
+            <input class="contact__submit" type="submit" value="Send!">
+            <p class="error"></p>
+        </form>
+
+    </div>
+    
+
+
+    <div>
+        <form class="headeritems__form" action="search.html" method="get"><button class="headeritems__button"><i
+            class="fas fa-search"></i>search</button><input class="headeritems__input" type="search"
+        placeholder="SØG"></form>
+    </div>
+    
+        <div>
+            <h2>Listen to me</h2>
+            <div class="xtra-txt">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nam ex vitae eligendi explicabo, nemo id provident
+                quia voluptatibus facere maxime exercitationem minima. Quis veniam, totam optio deleniti consequatur distinctio
+                quidem!</div>
+            <button id="readmore">ReadMore</button>
+        </div>
+    
+
+
+
+
+   
+</body>
+
+
+</html>
